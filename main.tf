@@ -16,5 +16,5 @@ output "random" {
 }
 
 output "foo-test-str" {
-  value = var.foo_test
+  value = "Hello, ${var.foo_test} & ${random_id.random.hex}!"
 }
